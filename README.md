@@ -6,8 +6,6 @@ A Flutter application for managing banking features.
 
 **Alibank** is a Flutter-based mobile application designed for banking features.
 
-Feel free to explore the code and contribute to the project.
-
 ## Preview
 
 ![Flutter](https://github.com/user-attachments/assets/b3c21d81-1b98-4180-91f5-1956db508214)
@@ -26,5 +24,5 @@ Ensure you have Flutter installed on your machine. If not, follow these instruct
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/alibank.git
+git clone https://github.com/alinemelodev/alibank.git
 cd alibank
