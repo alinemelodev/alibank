@@ -1,22 +1,30 @@
+import 'package:alibank/components/sections/account_actions.dart';
+import 'package:alibank/components/sections/account_points.dart';
 import 'package:alibank/components/sections/header.dart';
-import 'package:alibank/components/shered/box_card.dart';
-import 'package:alibank/components/shered/color_dot.dart';
-import 'package:alibank/components/shered/content_division.dart';
-import 'package:alibank/themes/theme_colors.dart';
+import 'package:alibank/components/sections/recent_activity.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({super.key});
 
   @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: <Widget> [
-          Header(),
-          BoxCard(boxContent: ContentDivision())
-        ],
-      )
+    return const Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Header(),
+            RecentActivity(),
+            AccountActions(),
+            AccountPoints(),
+          ],
+        ),
+      ),
     );
   }
 }

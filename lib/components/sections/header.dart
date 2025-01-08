@@ -18,12 +18,17 @@ class Header extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.fromLTRB(16.0, 80.0, 16.0, 16.0),
+        padding: const EdgeInsets.fromLTRB(16.0, 80.0, 16.0, 16.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
+            Image.asset(
+              'assets/images/logo_alibank.png',
+              width: 70,
+              height: 70,
+            ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
                 Text.rich(
                   TextSpan(
@@ -36,14 +41,10 @@ class Header extends StatelessWidget {
                     ],
                   ),
                 ),
-                Text(
+                const Text(
                   'Saldo disponível',
                 ),
               ],
-            ),
-            Icon(
-              Icons.account_circle,
-              size: 42,
             ),
           ],
         ),
